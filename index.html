@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-web-app | Home</title>
+
+    <!-- Link to css file -->
+    <link 
+        rel="stylesheet"
+        href="style.css"
+     >
+    <!-- Link to Fontawesome fonts -->
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header_section">
+        <h1 class="todo">To-doist web app</h1>
+    </header>
+
+    <!-- Main body section -->
+    
+    <section class="main_section container">
+        <!-- Task input -->
+        <div class="form_control">
+             <p class="alert"></p>
+           <form>
+
+            <!-- Task title input field -->
+               <label for="title">
+                   <input class="input" 
+                   placeholder="Enter Task Title" 
+                   type="text" 
+                   name="text" 
+                   id="title_input"
+                   value =""
+                    >
+               </label>
+
+            <!-- Textarea field for description of task -->
+              <div class="textarea">
+                <textarea
+                   class="input" 
+                   name="description"
+                    id="textarea" 
+                   cols="30" rows="10"
+                   placeholder="Task Description"
+                   value ="";
+                >
+                </textarea>
+              </div>
+            </form>
+              <button class="btn btn-add">Save Task</button>
+        </div>
+        <!-- Tasks Collection -->
+        <div class="task_collection">
+            <!-- pending tasks -->
+            <div class="pending_tasks" id="pending_tasks">
+                <h3 class="title_task">
+                    Pending Task
+                </h3>
+                <!-- Pending Tasks -->
+               <div class="task" id="pending"></div>
+            </div>
+            <!-- completed tasks -->
+            <div class="completed_tasks">
+            <div class="header_completed">
+                <h3 class="title_task">
+                    Completed Tasks
+                </h3>
+                    <i class="fa fa-trash clearCompleted"></i>
+            </div>
+             <!--Completed Task Container  -->
+                <div class="task" id="completed"></div>
+            </div>
+        </div>
+
+        <!-- SO TIME AND DATE -->
+        
+    </section>
+    <hr />
+    <footer footer>
+        <div class="date"></div>
+    </footer>
+
+    <!-- Link to JS Files -->
+    <script src="script.js"></script>
+</body>
+</html>
